@@ -1,3 +1,3 @@
 # About
 
-Self price codes for spring boot framework.
+Self practice codes for spring boot framework.
