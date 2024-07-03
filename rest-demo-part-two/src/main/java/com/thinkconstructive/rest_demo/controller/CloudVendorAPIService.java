@@ -38,7 +38,7 @@ public class CloudVendorAPIService {
         return "Cloud Vendor Updated Successfully!";
     }
 
-    @DeleteMapping
+    @DeleteMapping("{vendorId}") // vendorID is a path variable in the URL
     public String deleteCloudVendorDetails(@RequestBody CloudVendor cloudVendor) {
         
         this.cloudVendor = null;

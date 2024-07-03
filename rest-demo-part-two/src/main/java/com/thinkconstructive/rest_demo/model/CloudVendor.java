@@ -1,6 +1,9 @@
 package com.thinkconstructive.rest_demo.model;
 
+@Entity
+@Table(name = "cloud_vendor_info")
 public class CloudVendor {
+    @ID
     private String vendorId;
     private String vendorName;
     private String vendorAddress;
