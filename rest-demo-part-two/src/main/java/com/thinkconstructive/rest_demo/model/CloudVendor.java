@@ -1,9 +1,13 @@
 package com.thinkconstructive.rest_demo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+
 @Entity
 @Table(name = "cloud_vendor_info")
 public class CloudVendor {
-    @ID
+    @Id
     private String vendorId;
     private String vendorName;
     private String vendorAddress;

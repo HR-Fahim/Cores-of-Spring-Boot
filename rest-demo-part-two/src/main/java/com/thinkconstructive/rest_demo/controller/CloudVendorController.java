@@ -25,11 +25,11 @@ public class CloudVendorController {
     
     // Read Specific Cloud Vendor Details
     @GetMapping("{vendorId}") // vendorID is a path variable in the URL
-    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorID) {
+    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId) {
 
         // return new CloudVendor("C1", "Cloud Vendor 1", "123 Main Street", "123-456-7890");
         
-        return cloudVendorService.getCloudVendor(vendorID);
+        return cloudVendorService.getCloudVendor(vendorId);
 
     }
 
@@ -56,9 +56,9 @@ public class CloudVendorController {
     }
 
     @DeleteMapping("{vendorId}") // vendorID is a path variable in the URL
-    public String deleteCloudVendorDetails(@PathVariable("vendorId") String vendorID) {
+    public String deleteCloudVendorDetails(@PathVariable("vendorId") String vendorId) {
         
-        cloudVendorService.deleteCloudVendor(vendorID);
+        cloudVendorService.deleteCloudVendor(vendorId);
         return "Cloud Vendor Deleted Successfully!";
     }
 
