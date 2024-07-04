@@ -1,12 +1,13 @@
 package com.thinkconstructive.rest_demo.controller;
 import com.thinkconstructive.rest_demo.model.CloudVendor;
 
-import main.java.com.thinkconstructive.rest_demo.service.CloudVendorService;
+import com.thinkconstructive.rest_demo.service.CloudVendorService;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
